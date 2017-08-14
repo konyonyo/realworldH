@@ -20,7 +20,7 @@ direction a b c
                bcx = (x c) - (x b)
                bcy = (y c) - (y b)
 
--- 平面上の点の集合の閉包をGraham Scanアルゴリズムで求める
+-- 平面上の点の集合の凸包をGraham Scanアルゴリズムで求める
 convexHull :: [Point2D] -> [Point2D]
 convexHull xs = convexHullSub ys
     where
